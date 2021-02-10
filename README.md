@@ -1,18 +1,19 @@
-# vue-cli_villes
+# Projet 'vuejs_Villes'
 
 ### Présentation
 
-Liste d'un échantillon de 1000 villes à travers le monde avec
-affichage d'une carte situant la ville sur laquelle l'utilisateur a cliqué, et
-possibilité de filtrer et/ou classer cette liste.
+Liste d'un échantillon de 1000 villes à travers le monde avec :
+- Possibilité de filtrer la liste (par saisie et/ou par pays),
+- Possibilité de classer la liste par colonne de données (Villes, pays, région),
+- Affichage d'une carte situant la ville sur laquelle l'utilisateur a cliqué,
 
 ### Note personnelle
 
-Le but de cette application était de me familiariser avec Vue.js et son écosystème (vuex).
+Le but de cette application était de me familiariser avec Vue.js et une partie de son écosystème (vuex).
 
-J'ai fait le choix de stocker les données dans un fichier .json (récupérées sur le site [mockaroo](https://www.mockaroo.com/)) car il s'agit du moyen le plus rapide en comparaison avec l'instauration d'une base de données (SQL ou no SQL).
+Les données sont stockées dans un fichier .json (récupérées sur le site [mockaroo](https://www.mockaroo.com/)) : Le code pour récupérer ces données est par conséquent simple et rapide à mettre en place.
 
-Il est évident que charger la totalité du fichier (comme je le fais à l'arrivée dans l'application) n'est pas indiqué: Les résultats en terme de performance sont inversement proportionnels à la quantité de données stockée dans le fichier en question. Cela peut vite être problématique lorsqu'il s'agit de charger des milliers de lignes, mais ma priorité était avant tout ici d'apprendre à maitriser Vue.js et de comprendre son fonctionnement, comment les différents fichiers s'articulent, comment et quand faire un composant, comment partager des données entre eux,...Bref, la pertinence d'un chargement initial des données n'était pour moi dans le cas présent que secondaire, ce qui ne doit pas être le cas en production bien sûr :-)
+Evidemment, charger la totalité du fichier (comme je le fais à l'arrivée dans l'application) n'est pas indiqué: Les performances sont inversement proportionnels à la quantité de données stockée dans le fichier json. Cela peut vite être problématique lorsqu'il s'agit de charger des milliers de lignes, mais ma priorité était avant tout ici d'apprendre à maitriser Vue.js et de comprendre son fonctionnement...Bref, la pertinence d'un chargement initial des données n'était pour moi dans le cas présent que secondaire, ce qui ne doit pas être le cas en production bien sûr :-)
 
 ### Project setup
 ```
