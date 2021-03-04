@@ -24,3 +24,8 @@ pnpm-debug.log*
 
 # Autre fichier de données .json
 EuropeanCities.json
+
+# Fichiers relatifs à Firebase (pour le hosting de l'application)
+.firebaserc
+firebase.json
+.firebase
