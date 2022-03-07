@@ -120,12 +120,6 @@ export default {
             margin: 10vh auto;
         }
     }
-    @media screen and (max-height: 500px) {
-        #encartInfosVille {
-            height: 90%;
-            margin: 5vh auto;
-        }
-    }
 
     #encartInfosVille > i {
         font-size: 20px;
@@ -154,5 +148,17 @@ export default {
     #content label + span { margin: 0 0 0 5px; }
     #map {
         height: calc(100% - 170px);
+    }
+
+    @media screen and (max-height: 500px) {
+        #encartInfosVille {
+            height: 90%;
+            margin: 5vh auto;
+        }
+        .column > div {
+            padding: 1px 5px;
+        }
+        #content { height: 100px; font-size: 14px; }
+        #map { height: calc(100% - 110px); }
     }
 </style>
