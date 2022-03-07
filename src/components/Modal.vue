@@ -105,12 +105,13 @@ export default {
         animation: 0.5s intro ease-in-out;
     }
     @keyframes intro {
-        from {
+        0% {
             opacity: 0%;
             transform: translate(-50%, 40px);
         }
-        to {
+        100% {
             opacity: 100%;
+            transform: translate(-50%, 0);
         }
     }
 
