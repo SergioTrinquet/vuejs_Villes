@@ -51,6 +51,8 @@ export default {
   ::placeholder {
       color: #fff;
       opacity: 0.7;
+      font-size: 12px;
+      font-size: max(12px, min(3vw, 15px));
   }
   :-ms-input-placeholder {
       color: #fff;
