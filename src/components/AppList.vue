@@ -207,7 +207,7 @@ export default {
 .contentList > div:first-child { padding: 50px 10px 5px 10px; }
 @media screen and (pointer: coarse) {
     .contentList > div { padding: 2vh 10px; }
-    .contentList > div:first-child { padding: 50px 10px 2vh 10px; }
+    .contentList > div:first-child { padding: calc(45px + 2vh) 10px 2vh 10px; }
 }
 
 .headerList {
