@@ -13,9 +13,9 @@ Si vous voulez voir ce que cela donne, [l'application est hébergée ici](https:
 
 Le but de cette application était de me familiariser avec Vue.js et une partie de son écosystème (vuex).
 
-Les données sont stockées dans un fichier .json (récupérées sur le site [mockaroo](https://www.mockaroo.com/)) : Le code pour récupérer ces données est par conséquent simple et rapide à mettre en place.
+Les données sont stockées dans un fichier .json (récupérées sur le site [mockaroo](https://www.mockaroo.com/)) : Le code pour récupérer ces données est donc simple et rapide à mettre en place.  
 
-Charger la totalité du fichier (comme je le fais à l'arrivée dans l'application) n'est pas indiqué: Les performances sont inversement proportionnelles à la quantité de données stockée dans le fichier json. Cela peut vite être problématique lorsqu'il s'agit de charger des milliers de lignes, mais ma priorité était avant tout ici d'apprendre à maitriser Vue.js et de comprendre son fonctionnement...Bref, la pertinence d'un chargement initial des données n'était pour moi dans le cas présent que secondaire, ce qui ne doit pas être le cas en production bien sûr :-)
+PS: Charger la totalité du fichier (comme je le fais à l'arrivée dans l'application) n'est pas forcément indiqué, surtout s'il y a beaucoup de données dans le fichier .json en question. Dans un projet professionnel avec beaucoup de data, ce chargement se ferait à partir d'une bdd, mais ma priorité était avant tout ici d'apprendre à maitriser Vue.js.
 
 ### Project setup
 ```
