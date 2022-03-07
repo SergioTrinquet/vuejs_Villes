@@ -106,11 +106,11 @@ export default {
     }
     @keyframes intro {
         0% {
-            opacity: 0%;
+            opacity: 0;
             transform: translate(-50%, 40px);
         }
         100% {
-            opacity: 100%;
+            opacity: 1;
             transform: translate(-50%, 0);
         }
     }
