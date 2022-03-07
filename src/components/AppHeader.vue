@@ -48,10 +48,16 @@ export default {
 </script>
 
 <style>
-  ::placeholder,
-  :-ms-input-placeholder,
+  ::placeholder {
+      color: #fff;
+      opacity: 0.7;
+  }
+  :-ms-input-placeholder {
+      color: #fff;
+      opacity: 0.7;
+  }
   ::-ms-input-placeholder {
-      color: #ffffff;
+      color: #fff;
       opacity: 0.7;
   }
   .titre {
