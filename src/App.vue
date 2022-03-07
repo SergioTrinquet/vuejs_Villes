@@ -64,7 +64,8 @@ export default {
 		-moz-osx-font-smoothing: grayscale;
 		color: #2c3e50;
 		margin: 0;
-		font-size: 15px;
+		/* font-size: clamp(12px, 3vw, 15px); */ /* Version non IOS compatible */
+    font-size: max(12px, min(3vw, 15px)) /* Version IOS compatible */
 	}
 	body * {
 		box-sizing: border-box;

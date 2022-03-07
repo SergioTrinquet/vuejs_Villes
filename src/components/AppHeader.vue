@@ -76,13 +76,16 @@ export default {
       background-color: #274d8e;
   }
   .bandeau > div:last-child > div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
       padding: 10px;
   }
   .bandeau input,
   .bandeau select {
       border-radius: 4px;
-      width:25%;
-      min-width: 300px;
+      width: 50%;
+      max-width: 300px;
       border: 0;
       margin: 0;
       padding: 7px 10px;

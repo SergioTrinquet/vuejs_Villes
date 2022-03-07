@@ -44,6 +44,7 @@ export default {
         background-color: rgba(212, 212, 212, 0.3);
         border: solid 1px #6d6d6d;
         width: 45px;
+        transform: translateX(-50%);
         text-align: center;
         font-weight: bold;
     }

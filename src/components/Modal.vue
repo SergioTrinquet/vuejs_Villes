@@ -91,16 +91,17 @@ export default {
         position: fixed;
         z-index: 11;
         top: 0;
-        width: 50%;
-        height: 70%;
+        width: 90vw;
+        height: 90%;
+        max-width: 800px;
         background-color: rgba(10, 10, 10, 0.9);
         border-radius: 15px;
         color: #ffffff;
-        padding: 30px;
+        padding: min(3vmax, 30px);
         box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
         left: 50%;
         transform: translateX(-50%);
-        margin: 15vh auto;
+        margin: 5vh auto;
         animation: 0.5s intro ease-in-out;
     }
     @keyframes intro {
@@ -113,14 +114,16 @@ export default {
         }
     }
 
-    @media screen and (max-width: 1350px) {
-        #encartInfosVille { 
-            min-width: 600px;
+    @media screen and (orientation: landscape) {
+        #encartInfosVille {
+            height: 80%;
+            margin: 10vh auto;
         }
     }
-    @media screen and (max-height: 700px) {
-        #encartInfosVille { 
-            min-height: 480px;
+    @media screen and (max-height: 500px) {
+        #encartInfosVille {
+            height: 90%;
+            margin: 5vh auto;
         }
     }
 
@@ -140,14 +143,14 @@ export default {
         display: table; 
         width: 100%;
         height: 150px;
-        font-size: 18px;
+        font-size: max(14px, min(3vw, 18px));
     }
     #content .column {
         width: 50%;
         display: table-cell;
     }
     .column > div { padding: 5px; }
-    #content label { color: #cecece; }
+    #content label { color: #cecece; display: inline-block; }
     #content label + span { margin: 0 0 0 5px; }
     #map {
         height: calc(100% - 170px);

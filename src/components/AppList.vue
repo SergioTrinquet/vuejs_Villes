@@ -169,42 +169,45 @@ export default {
 </script>
 
 <style scoped>
-    .iconHeader {
-        cursor: pointer;
-        margin-left: 6px;
-        background-color: rgba(255, 255, 255, 0.5);
-        border-radius: 50%;
-        color: #6279bd;
-        padding: 6px;
-        font-size: 15px;
-        width: 1em;
-        height: 1em;
-        box-sizing: content-box;
-    }
-    .sorted .iconHeader {
-        background-color: rgba(255,255,255,1);
-    }
-
-    /* Contenu de la liste */
-    #filterResult {
-        background-color: rgba(212, 212, 212, 0.5);
-    }
-    #filterResult > div { 
-        padding: 5px 10px; 
-        border-bottom: dashed 1px #cecece; 
-    }
-
-
-.list { 
-    margin: 122px 25px 25px 25px; 
-    box-shadow: 0 3px 4px rgba(50,50,50,.3);
+.iconHeader {
+    cursor: pointer;
+    margin-left: 6px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    color: #6279bd;
+    padding: 6px;
+    font-size: 15px;
+    width: 1em;
+    height: 1em;
+    box-sizing: content-box;
+}
+.sorted .iconHeader {
+    background-color: rgba(255,255,255,1);
 }
 
+/* Contenu de la liste */
+#filterResult {
+    background-color: rgba(212, 212, 212, 0.5);
+}
+#filterResult > div { 
+    padding: 5px 10px; 
+    border-bottom: dashed 1px #cecece; 
+}
+.list { 
+    margin-top: 122px;
+    margin-right: 25px;
+    margin-bottom: 25px;
+    margin-left: 25px;
+    box-shadow: 0 3px 4px rgba(50,50,50,.3);
+}
 .contentList {
     background-color: rgba(212, 212, 212, 0.3);
 }
 .contentList > div { padding: 5px 10px; }
 .contentList > div:first-child { padding: 50px 10px 5px 10px; }
+@media screen and(pointer: coarse) {
+    .contentList > div { padding: 2vh 10px; }
+}
 
 .headerList {
     padding: 7px 10px;
@@ -215,16 +218,32 @@ export default {
     z-index: 9;
     width: calc(100% - 50px);
 }
+@media screen and (max-width: 550px) {
+    .list {
+        margin-right: 0;
+        margin-bottom: 0;
+        margin-left: 0;
+    }
+    .headerList {
+        width: 100%;
+    }
+}
+.headerList,
+.contentList > div {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .contentList > div { border-bottom: dashed 1px #c7c7c7; }
 .contentList > div:hover { background-color: #ececec; }
 .contentList > div > span,
-.headerList > span { display: inline-block; }
+.headerList > span { display: inline-block; overflow-wrap: break-word; }
 .contentList > div > span:nth-child(1),
-.headerList > span:nth-child(1) { width:25%; min-width: 200px; }
+.headerList > span:nth-child(1) { width:25%; min-width: 110px; padding-right: 5px; }
 .contentList > div > span:nth-child(2),
-.headerList > span:nth-child(2) { width:25%; min-width: 200px; }
+.headerList > span:nth-child(2) { width:25%; min-width: 110px; padding-right: 5px; }
 .contentList > div > span:nth-child(3),
-.headerList > span:nth-child(3) { width:30%; min-width: 350px; }
+.headerList > span:nth-child(3) { width:30%; min-width: 110px; }
 
 .contentList [data-surlign] i {  
     font-style: normal;
