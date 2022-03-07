@@ -100,7 +100,6 @@ export default {
         padding: min(3vmax, 30px);
         box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
         left: 50%;
-        /* transform: translateX(-50%); */
         margin: 5vh auto;
         animation: 0.5s intro ease-in-out forwards;
     }
